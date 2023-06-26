@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf');
+}
+
+$fontLogo:'Shrikhand', sans-serif;
+$fontTitles:'RobotoMedium', sans-serif;
+$fontP:'RobotoLight', sans-serif;
+
