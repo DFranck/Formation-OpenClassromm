@@ -40,6 +40,7 @@
 }
 
 button {
+  cursor: pointer;
   color: white;
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
@@ -129,4 +130,65 @@ header .location-container span {
 }
 .functioning .steps .step h3 {
   font-size: 1rem;
+}
+
+.restaurants {
+  padding: 50px 20px;
+  background: #F6F6F6;
+}
+.restaurants h2 {
+  margin-bottom: 30px;
+}
+.restaurants .cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants .cards-container a {
+  width: 100%;
+}
+.restaurants .cards-container a .card {
+  background: white;
+  border-radius: 15px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+.restaurants .cards-container a .card .img-container {
+  position: relative;
+  height: 75%;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .cards-container a .card .img-container .new {
+  background: #99E2D0;
+  color: #008766;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-family: "RobotoMedium", sans-serif;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+}
+.restaurants .cards-container a .card .content {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 15px;
+}
+.restaurants .cards-container a .card-1 .img-container {
+  background: url(./../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+}
+.restaurants .cards-container a .card-2 .img-container {
+  background: url(./../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+}
+.restaurants .cards-container a .card-3 .img-container {
+  background: url(./../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+}
+.restaurants .cards-container a .card-4 .img-container {
+  background: url(./../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
 }/*# sourceMappingURL=styles.css.map */
