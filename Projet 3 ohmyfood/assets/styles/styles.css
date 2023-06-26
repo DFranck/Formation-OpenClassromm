@@ -64,8 +64,44 @@ header .location-container {
   height: 50px;
   background: #EAEAEA;
 }
-header .location-container span {
+header .location-container input {
   font-family: "RobotoMedium", sans-serif;
+  background: none;
+  border: none;
+  width: 100px;
+  padding: 5px;
+}
+
+footer {
+  background: #353535;
+  padding: 20px;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 20px;
+}
+footer ul li {
+  line-height: 1.5rem;
+}
+footer ul li i {
+  font-size: 0.8rem;
+  color: white;
+  width: 20px;
+}
+footer ul li:nth-child(2) i {
+  font-size: 0.6rem;
+}
+footer ul li a {
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+footer ul :nth-child(3) a, footer ul :nth-child(4) a {
+  font-family: "RobotoLight", sans-serif;
+  font-weight: 400;
 }
 
 .intro {

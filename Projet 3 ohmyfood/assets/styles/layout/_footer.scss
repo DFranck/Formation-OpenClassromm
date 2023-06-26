@@ -1,1 +1,39 @@
-@use "../settings";
+@use "../settings" as set;
+
+footer{
+    background: #353535;
+    padding: 20px;
+    h2{
+        font-family: set.$Logo;
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: white;
+        margin-bottom: 20px;
+    }
+    ul{
+        li{
+            line-height: 1.5rem;
+            i{
+                font-size: .8rem;
+                color: white;
+                width: 20px;
+            }
+            &:nth-child(2) i{
+                font-size: .6rem;
+            }
+            a{
+                font-family: set.$Subtitles;
+                font-size: 1rem;
+                color: white;
+            }
+        }
+        :nth-child(3),:nth-child(4){
+            a{
+                font-family: set.$paragraphs;
+                font-weight: 400;
+
+            }
+        }
+
+    }
+}

@@ -15,8 +15,12 @@ header{
         gap: 17px;
         height: 50px;
         background: set.$colorBG1;
-        span{
+        input{
             font-family: set.$Subtitles;
+            background: none;
+            border: none;
+            width: 100px;
+            padding: 5px;
         }
     }
 }
