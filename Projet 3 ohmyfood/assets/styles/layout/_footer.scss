@@ -3,14 +3,28 @@
 footer{
     background: #353535;
     padding: 20px;
+    @media screen and (min-width: 1438px) {
+        position: relative;
+        padding: 60px 25px 30px;
+    }
     h2{
         font-family: set.$Logo;
         font-weight: 400;
         font-size: 1.125rem;
         color: white;
         margin-bottom: 20px;
+        @media screen and (min-width: 1438px) {
+            position: absolute;
+            right: 5%;
+        }
     }
     ul{
+        @media screen and (min-width: 1438px) {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-left: 300px;
+        }
         li{
             line-height: 1.5rem;
             i{

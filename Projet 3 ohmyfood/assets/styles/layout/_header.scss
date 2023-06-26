@@ -7,6 +7,9 @@ header{
         align-items: center;
         height: 63px;
         // box-shadow: 0 2px 4px 0 black;
+        @media screen and (min-width: 1438px) {
+            height: 96px;
+        }
     }
     .location-container{
         display: flex;
@@ -15,12 +18,21 @@ header{
         gap: 17px;
         height: 50px;
         background: set.$colorBG1;
+        
+        i{
+            color: #353535;
+        }
         input{
             font-family: set.$Subtitles;
             background: none;
             border: none;
             width: 100px;
             padding: 5px;
+            color: #353535;
+            &::placeholder{
+                color: #353535;
+                opacity: 01;
+            }
         }
     }
 }

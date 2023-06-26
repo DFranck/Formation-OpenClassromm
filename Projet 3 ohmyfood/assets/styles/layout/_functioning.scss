@@ -2,6 +2,9 @@
 
 .functioning{
     padding: 30px;
+    @media screen and (min-width: 1438px) {
+        padding: 50px 180px;
+    }
     h2{
         margin-bottom: 30px;
     }
@@ -10,7 +13,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
+        @media screen and (min-width: 1438px) {
+            flex-direction: row;
+        }
         .step{
             display: flex;
             align-items: center;
