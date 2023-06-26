@@ -1,0 +1,15 @@
+@use '../settings' as set;
+
+.intro{
+    text-align: center;
+    padding: 30px;
+    background: set.$colorBG2;
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+        color: set.$grey;
+        font-size: 1.125rem;
+    }
+}

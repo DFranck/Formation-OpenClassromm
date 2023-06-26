@@ -1,1 +1,11 @@
 @use "../settings";
+
+button{
+  color: white;
+  background: rgb(147,86,220);
+  background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);;  
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 @font-face {
     font-family: 'RobotoLight';
@@ -27,3 +22,36 @@ $Titles:'RobotoBold', sans-serif;
 $Subtitles:'RobotoMedium', sans-serif;
 $paragraphs:'RobotoLight', sans-serif;
 
+$color1: #9356DC;
+$color2: #FF79DA;
+$color3: #99E2D0;
+$colorBG1: #EAEAEA;
+$colorBG2: #F6F6F6;
+$grey:#353535;
+$icons:#7E7E7E;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    h1{
+        font-family: $Logo;
+        font-size: 1.875rem;
+        font-weight: 400;
+    }
+    h2{
+        font-family: $Titles;
+        font-size: 1.5rem;
+    }
+    h3{
+        font-family: $Subtitles;
+        font-size: 1.125rem;
+    }
+    p{
+        font-family: $paragraphs;
+    }
+}

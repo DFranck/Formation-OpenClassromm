@@ -1,1 +1,22 @@
-@use "../settings";
+@use "../settings" as set;
+
+header{
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 63px;
+        // box-shadow: 0 2px 4px 0 black;
+    }
+    .location-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        height: 50px;
+        background: set.$colorBG1;
+        span{
+            font-family: set.$Subtitles;
+        }
+    }
+}

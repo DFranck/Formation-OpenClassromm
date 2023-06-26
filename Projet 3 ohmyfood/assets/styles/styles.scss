@@ -6,7 +6,6 @@
 @use "./layout/header";
 @use "./layout/footer";
 
-@use "./pages/La\ note\ enchantée.html";
-@use "./pages/La\ palette\ du\ goût.html";
-@use "./pages/Le\ délice\ des\ sens.html";
-@use "./pages/À\ la\ française.html";
+@use './layout/intro';
+@use './layout/functioning';
+@use './layout/restaurants';
