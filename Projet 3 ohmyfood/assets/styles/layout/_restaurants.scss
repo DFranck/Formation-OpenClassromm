@@ -3,6 +3,12 @@
 .restaurants{
     padding: 50px 20px;
     background: set.$colorBG2;
+    @media screen and (min-width: 770px) {
+        padding: 50px 120px;
+    }
+    @media screen and (min-width: 1000px) {
+        padding: 40px;
+    }
     @media screen and (min-width: 1438px) {
         padding: 50px 180px 14px;
     }
@@ -14,6 +20,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @media screen and (min-width: 770px) {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 28px;
+            justify-content: space-between;
+        }
         @media screen and (min-width: 1438px) {
             flex-direction: row;
             flex-wrap: wrap;
@@ -22,8 +35,11 @@
         }
         a{
             width: 100%;
+            @media screen and (min-width: 1000px) {
+
+                width: 48%;
+        }
             @media screen and (min-width: 1438px) {
-                width: 45%;
         }
         }
     }

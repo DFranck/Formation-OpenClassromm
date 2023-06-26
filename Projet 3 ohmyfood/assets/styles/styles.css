@@ -105,6 +105,11 @@ header .logo-container {
   align-items: center;
   height: 63px;
 }
+@media screen and (min-width: 770px) {
+  header .logo-container {
+    height: 80px;
+  }
+}
 @media screen and (min-width: 1438px) {
   header .logo-container {
     height: 96px;
@@ -198,6 +203,11 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
 .intro h2 {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 770px) {
+  .intro h2 {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 1438px) {
   .intro h2 {
     font-size: 2.5rem;
@@ -211,6 +221,16 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
 
 .functioning {
   padding: 30px;
+}
+@media screen and (min-width: 770px) {
+  .functioning {
+    padding: 40px 120px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .functioning {
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 1438px) {
   .functioning {
@@ -226,6 +246,11 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
   align-items: center;
   flex-direction: column;
   gap: 25px;
+}
+@media screen and (min-width: 1000px) {
+  .functioning .steps {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1438px) {
   .functioning .steps {
@@ -273,6 +298,16 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
   padding: 50px 20px;
   background: #F6F6F6;
 }
+@media screen and (min-width: 770px) {
+  .restaurants {
+    padding: 50px 120px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurants {
+    padding: 40px;
+  }
+}
 @media screen and (min-width: 1438px) {
   .restaurants {
     padding: 50px 180px 14px;
@@ -287,6 +322,14 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 770px) {
+  .restaurants .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1438px) {
   .restaurants .cards-container {
     flex-direction: row;
@@ -298,8 +341,8 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
 .restaurants .cards-container a {
   width: 100%;
 }
-@media screen and (min-width: 1438px) {
+@media screen and (min-width: 1000px) {
   .restaurants .cards-container a {
-    width: 45%;
+    width: 48%;
   }
 }/*# sourceMappingURL=styles.css.map */

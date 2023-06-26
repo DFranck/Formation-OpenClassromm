@@ -7,6 +7,9 @@ header{
         align-items: center;
         height: 63px;
         // box-shadow: 0 2px 4px 0 black;
+        @media screen and (min-width: 770px) {
+            height: 80px;
+        }
         @media screen and (min-width: 1438px) {
             height: 96px;
         }
