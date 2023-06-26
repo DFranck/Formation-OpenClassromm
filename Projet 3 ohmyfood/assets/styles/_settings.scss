@@ -13,11 +13,17 @@
     src: url('../fonts/Roboto/Roboto-Medium.ttf');
 }
 @font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
     font-family: 'Shrikhand';
     src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf');
 }
 
-$fontLogo:'Shrikhand', sans-serif;
-$fontTitles:'RobotoMedium', sans-serif;
-$fontP:'RobotoLight', sans-serif;
+
+$Logo:'Shrikhand', sans-serif;
+$Titles:'RobotoBold', sans-serif;
+$Subtitles:'RobotoMedium', sans-serif;
+$paragraphs:'RobotoLight', sans-serif;
 
