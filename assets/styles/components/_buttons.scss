@@ -1,6 +1,8 @@
 @use "../settings" as set;
 
+
 .big-button{
+  margin-top: 20px;
   cursor: pointer;
   color: white;
   background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);;  
@@ -15,6 +17,7 @@
   }
 }
 .new{
+  cursor: pointer;
   background: #99E2D0;
   color: #008766;
   font-size: 0.875rem;
@@ -27,4 +30,36 @@
   top: 8%;
   right: 5%;
   border: none;
+}
+.like{
+  border: none;
+  background: none;
+  position: relative;
+  height: 100%;
+  i{
+    transition: .2s;
+    position: relative;
+      cursor: pointer;
+      font-size: 1.5rem;
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .empty{
+    opacity: 1;
+    &:hover{
+      opacity: 0;
+    }
+
+  }
+  .full{
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+      background: linear-gradient(0deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+  }
 }

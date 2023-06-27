@@ -40,6 +40,7 @@
 }
 
 .big-button {
+  margin-top: 20px;
   cursor: pointer;
   color: white;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
@@ -55,6 +56,7 @@
 }
 
 .new {
+  cursor: pointer;
   background: #99E2D0;
   color: #008766;
   font-size: 0.875rem;
@@ -68,6 +70,38 @@
   top: 8%;
   right: 5%;
   border: none;
+}
+
+.like {
+  border: none;
+  background: none;
+  position: relative;
+  height: 100%;
+}
+.like i {
+  transition: 0.2s;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.like .empty {
+  opacity: 1;
+}
+.like .empty:hover {
+  opacity: 0;
+}
+.like .full {
+  opacity: 0;
+}
+.like .full:hover {
+  opacity: 1;
+  background: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card {
@@ -86,7 +120,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px 0 15px;
+  padding: 0 0 0 15px;
 }
 
 .card-1 .img-container {
@@ -419,9 +453,6 @@ header .img-container .img-francaise {
   font-weight: 400;
   font-size: 1.75rem;
 }
-.menu .restaurant-name i {
-  font-size: 1.5rem;
-}
 .menu .starters, .menu .dishes, .menu .desserts {
   width: 100%;
   max-width: 634px;
@@ -467,7 +498,14 @@ header .img-container .img-francaise {
   font-family: "RobotoMedium", sans-serif;
   font-size: 15px;
 }
-.menu button {
-  margin-top: 20px;
+.menu .big-button {
   padding: 15px 45px;
+}
+.menu .like {
+  left: 30px;
+}
+@media screen and (min-width: 766px) {
+  .menu .like {
+    margin-left: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */
