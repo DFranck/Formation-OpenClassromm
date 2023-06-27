@@ -1,7 +1,21 @@
 @use "../settings" as set;
 
 header{
+    .logo-container{
 
+        position: relative;
+        .go-back{
+            height: 100%;
+            width: 70px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+    }
     .img-container{
         height: 30vh;
         width: 100%;

@@ -346,6 +346,20 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
     width: 48%;
   }
 }
+header .logo-container {
+  position: relative;
+}
+header .logo-container .go-back {
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
 header .img-container {
   height: 30vh;
   width: 100%;
