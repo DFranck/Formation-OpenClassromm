@@ -1,0 +1,81 @@
+@use "../settings" as set;
+
+header{
+
+    .img-container{
+        height: 30vh;
+        width: 100%;
+        .img{
+            background: url(./../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+            width: 100%;
+            height: 40vh;
+        }
+    }
+}
+.menu{
+    background: set.$colorBG1;
+    border-radius: 40px 40px 0 0;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .restaurant-name{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        h2{
+            font-family: set.$Logo;
+            font-weight: 400;
+            font-size: 1.75rem;
+        }
+        i{
+            font-size: 1.5rem;
+        }
+    }
+    .starters, .dishes, .desserts{
+        width: 100%;
+        h4{
+            font-family: set.$paragraphs;
+            font-weight: 300;
+            position: relative;
+            margin: 30px 0 20px;
+            text-transform: uppercase;
+            &::after{
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 40px;
+                background: set.$color3;
+                bottom: -10px;
+                left: 0;
+                z-index: 1000;
+            }
+        }
+        .meal{
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+            position: relative;
+            line-height: 1.5rem;
+            margin-bottom: 10px;
+            h3{
+                font-weight: 500;
+            }
+            p{
+                font-size: 15px;
+            }
+            span{
+                position: absolute;
+                right: 5%;
+                bottom: 15%;
+                font-weight: 700;
+                font-family: set.$Subtitles;
+                font-size: 15px;
+            }
+        }
+    }
+    button{
+        margin-top: 20px;
+    }
+}

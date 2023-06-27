@@ -345,4 +345,81 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
   .restaurants .cards-container a {
     width: 48%;
   }
+}
+header .img-container {
+  height: 30vh;
+  width: 100%;
+}
+header .img-container .img {
+  background: url(./../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.menu {
+  background: #EAEAEA;
+  border-radius: 40px 40px 0 0;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .restaurant-name {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.menu .restaurant-name h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+.menu .restaurant-name i {
+  font-size: 1.5rem;
+}
+.menu .starters, .menu .dishes, .menu .desserts {
+  width: 100%;
+}
+.menu .starters h4, .menu .dishes h4, .menu .desserts h4 {
+  font-family: "RobotoLight", sans-serif;
+  font-weight: 300;
+  position: relative;
+  margin: 30px 0 20px;
+  text-transform: uppercase;
+}
+.menu .starters h4::after, .menu .dishes h4::after, .menu .desserts h4::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background: #99E2D0;
+  bottom: -10px;
+  left: 0;
+  z-index: 1000;
+}
+.menu .starters .meal, .menu .dishes .meal, .menu .desserts .meal {
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+.menu .starters .meal h3, .menu .dishes .meal h3, .menu .desserts .meal h3 {
+  font-weight: 500;
+}
+.menu .starters .meal p, .menu .dishes .meal p, .menu .desserts .meal p {
+  font-size: 15px;
+}
+.menu .starters .meal span, .menu .dishes .meal span, .menu .desserts .meal span {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  font-weight: 700;
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 15px;
+}
+.menu button {
+  margin-top: 20px;
 }/*# sourceMappingURL=styles.css.map */
