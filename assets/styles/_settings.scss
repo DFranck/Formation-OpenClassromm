@@ -55,3 +55,47 @@ $icons:#7E7E7E;
         font-family: $paragraphs;
     }
 }
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $color3;
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    animation: loaderFade 1.5s ease forwards;
+    animation-iteration-count: 1;
+    &::after{
+        content: "";
+        height: 75px;
+        width: 75px;
+        border: 35px solid $color1;
+        border-top: 35px solid #FF79DA;
+        z-index: 9999;
+        animation: loading 2s ease-in-out infinite;
+    }
+    @keyframes loading {
+        0% {transform: rotate(0deg);}
+        25%{transform: rotate(90deg);}
+        50%{transform: rotate(180deg);}
+        75%{transform: rotate(270deg);}
+        100%{transform: rotate(360deg);}
+    }
+    @keyframes loaderFade {
+        0%{background: white;
+            opacity: 1;
+            visibility: visible;}
+        10%{opacity: 1;
+        visibility: visible;}
+        80%{opacity: 1;
+        visibility: visible;}
+        100%{opacity: 0;
+        visibility: hidden;}
+    }
+}
