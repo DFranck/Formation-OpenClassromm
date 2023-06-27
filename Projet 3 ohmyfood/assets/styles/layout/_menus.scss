@@ -5,8 +5,23 @@ header{
     .img-container{
         height: 30vh;
         width: 100%;
-        .img{
+        .img-palette{
             background: url(./../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+            width: 100%;
+            height: 40vh;
+        }
+        .img-delice{
+            background: url(./../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
+            width: 100%;
+            height: 40vh;
+        }
+        .img-note{
+            background: url(./../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+            width: 100%;
+            height: 40vh;
+        }
+        .img-francaise{
+            background: url(./../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
             width: 100%;
             height: 40vh;
         }
@@ -22,6 +37,9 @@ header{
     .restaurant-name{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+        width: 100%;
         gap: 30px;
         h2{
             font-family: set.$Logo;
@@ -77,5 +95,6 @@ header{
     }
     button{
         margin-top: 20px;
+        padding: 15px 45px;
     }
 }
