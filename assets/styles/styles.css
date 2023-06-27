@@ -538,30 +538,83 @@ header .img-container .img-francaise {
   z-index: 1000;
 }
 .menu .starters .meal, .menu .dishes .meal, .menu .desserts .meal {
+  overflow: hidden;
+  display: flex;
+  height: 69px;
+  justify-content: space-between;
   cursor: pointer;
-  padding: 10px;
   border-radius: 15px;
   color: white;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   line-height: 1.5rem;
   margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
 }
-.menu .starters .meal h3, .menu .dishes .meal h3, .menu .desserts .meal h3 {
+.menu .starters .meal:nth-child(2), .menu .dishes .meal:nth-child(2), .menu .desserts .meal:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu .starters .meal:nth-child(3), .menu .dishes .meal:nth-child(3), .menu .desserts .meal:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.menu .starters .meal:nth-child(4), .menu .dishes .meal:nth-child(4), .menu .desserts .meal:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.menu .starters .meal:nth-child(5), .menu .dishes .meal:nth-child(5), .menu .desserts .meal:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.menu .starters .meal:hover .meal-check, .menu .dishes .meal:hover .meal-check, .menu .desserts .meal:hover .meal-check {
+  transform: translateX(-59px);
+}
+.menu .starters .meal:hover .meal-check .meal-checked, .menu .dishes .meal:hover .meal-check .meal-checked, .menu .desserts .meal:hover .meal-check .meal-checked {
+  visibility: visible;
+}
+.menu .starters .meal .meal-txt, .menu .dishes .meal .meal-txt, .menu .desserts .meal .meal-txt {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px;
+  position: relative;
+}
+.menu .starters .meal .meal-txt h3, .menu .dishes .meal .meal-txt h3, .menu .desserts .meal .meal-txt h3 {
   font-weight: 500;
   text-align: left;
 }
-.menu .starters .meal p, .menu .dishes .meal p, .menu .desserts .meal p {
+.menu .starters .meal .meal-txt p, .menu .dishes .meal .meal-txt p, .menu .desserts .meal .meal-txt p {
   font-size: 15px;
   text-align: left;
 }
-.menu .starters .meal span, .menu .dishes .meal span, .menu .desserts .meal span {
-  position: absolute;
-  right: 5%;
-  bottom: 15%;
+.menu .starters .meal .meal-check, .menu .dishes .meal .meal-check, .menu .desserts .meal .meal-check {
+  transition: 1s;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.menu .starters .meal .meal-check .meal-price, .menu .dishes .meal .meal-check .meal-price, .menu .desserts .meal .meal-check .meal-price {
+  width: 40px;
+  transition: 1s;
   font-weight: 700;
   font-family: "RobotoMedium", sans-serif;
   font-size: 15px;
+  padding: 6px 15px;
+  transform: translateX(45px);
+}
+.menu .starters .meal .meal-check .meal-checked, .menu .dishes .meal .meal-check .meal-checked, .menu .desserts .meal .meal-check .meal-checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 69px;
+  width: 59px;
+  border-radius: 0 15px 15px 0;
+  background: #99E2D0;
+  transform: translateX(59px);
+}
+.menu .starters .meal .meal-check .meal-checked i, .menu .dishes .meal .meal-check .meal-checked i, .menu .desserts .meal .meal-check .meal-checked i {
+  color: white;
+  font-size: 1.25rem;
 }
 .menu .big-button {
   padding: 15px 45px;
@@ -572,5 +625,16 @@ header .img-container .img-francaise {
 @media screen and (min-width: 766px) {
   .menu .like {
     margin-left: 30px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=styles.css.map */

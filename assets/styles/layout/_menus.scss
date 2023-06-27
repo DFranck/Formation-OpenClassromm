@@ -89,29 +89,77 @@ header{
             }
         }
         .meal{
+            overflow: hidden;
+            display: flex;
+            height: 69px;
+            justify-content: space-between;
             cursor: pointer;
-            padding: 10px;
             border-radius: 15px;
             color: white;
             box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
             position: relative;
             line-height: 1.5rem;
             margin-bottom: 10px;
-            h3{
-                font-weight: 500;
-                text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp .5s ease-out forwards;
+            &:nth-child(2) { animation-delay: .2s; }
+            &:nth-child(3) { animation-delay: .4s; }
+            &:nth-child(4) { animation-delay: .6s; }
+            &:nth-child(5) { animation-delay: .8s; }
+            
+            &:hover{
+                .meal-check{
+                    transform: translateX(-59px);
+                    .meal-checked{
+                        visibility: visible;
+                    }
+                }
             }
-            p{
-                font-size: 15px;
-                text-align: left;
+            .meal-txt{
+                flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 15px;
+                position: relative;
+                h3{
+                    font-weight: 500;
+                    text-align: left;
+                }
+                p{
+                    font-size: 15px;
+                    text-align: left;
+                }
             }
-            span{
-                position: absolute;
-                right: 5%;
-                bottom: 15%;
-                font-weight: 700;
-                font-family: set.$Subtitles;
-                font-size: 15px;
+            .meal-check{
+                transition: 1s;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                .meal-price{
+                    width: 40px;
+                    transition: 1s;
+                    font-weight: 700;
+                    font-family: set.$Subtitles;
+                    font-size: 15px;
+                    padding: 6px 15px;
+                    transform: translateX(45px);
+                }
+                .meal-checked{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 69px;
+                    width: 59px;
+                    border-radius: 0 15px 15px 0;
+                    background: set.$color3;
+                    transform: translateX(59px);
+                    i{
+                        color: white;
+                        font-size: 1.25rem;
+                    }
+                }
             }
         }
     }
@@ -125,3 +173,15 @@ header{
         }
     }
 }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
