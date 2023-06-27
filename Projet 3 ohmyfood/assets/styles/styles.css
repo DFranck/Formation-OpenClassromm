@@ -386,6 +386,8 @@ header .img-container .img-francaise {
 }
 
 .menu {
+  max-width: 1055px;
+  margin: 0 auto;
   background: #EAEAEA;
   border-radius: 40px 40px 0 0;
   padding: 30px 10px;
@@ -401,6 +403,11 @@ header .img-container .img-francaise {
   width: 100%;
   gap: 30px;
 }
+@media screen and (min-width: 766px) {
+  .menu .restaurant-name {
+    justify-content: center;
+  }
+}
 .menu .restaurant-name h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
@@ -411,6 +418,8 @@ header .img-container .img-francaise {
 }
 .menu .starters, .menu .dishes, .menu .desserts {
   width: 100%;
+  max-width: 634px;
+  margin: 0 auto;
 }
 .menu .starters h4, .menu .dishes h4, .menu .desserts h4 {
   font-family: "RobotoLight", sans-serif;

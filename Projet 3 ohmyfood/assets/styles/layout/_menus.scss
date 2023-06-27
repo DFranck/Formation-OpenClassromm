@@ -42,6 +42,8 @@ header{
     }
 }
 .menu{
+    max-width: 1055px;
+    margin: 0 auto;
     background: set.$colorBG1;
     border-radius: 40px 40px 0 0;
     padding: 30px 10px;
@@ -55,6 +57,9 @@ header{
         padding-right: 30px;
         width: 100%;
         gap: 30px;
+        @media screen and (min-width:766px) {
+            justify-content: center;
+        }
         h2{
             font-family: set.$Logo;
             font-weight: 400;
@@ -66,6 +71,8 @@ header{
     }
     .starters, .dishes, .desserts{
         width: 100%;
+        max-width: 634px;
+        margin: 0 auto;
         h4{
             font-family: set.$paragraphs;
             font-weight: 300;
