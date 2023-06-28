@@ -90,7 +90,9 @@ header{
         }
         .meal{
             overflow: hidden;
-            display: flex;
+            // display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto;
             height: 69px;
             justify-content: space-between;
             cursor: pointer;
@@ -111,16 +113,15 @@ header{
             &:hover{
                 .meal-check{
                     transform: translateX(-59px);
+                    position: relative;
                     .meal-checked{
                         visibility: visible;
                     }
                 }
             }
             .meal-txt{
-                flex: 1;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
                 padding: 15px;
                 position: relative;
                 h3{
@@ -131,20 +132,28 @@ header{
                     font-size: 15px;
                     text-align: left;
                 }
+                
+            }
+            .meal-txt h3, .meal-txt p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .meal-check{
-                transition: 1s;
+                position: absolute;
+                right: 0;
+                transition: .5s;
                 height: 100%;
                 display: flex;
                 align-items: flex-end;
                 .meal-price{
-                    width: 40px;
-                    transition: 1s;
+                    width: 51px;
                     font-weight: 700;
                     font-family: set.$Subtitles;
                     font-size: 15px;
-                    padding: 6px 15px;
-                    transform: translateX(45px);
+                    padding: 0 15px 6px 9px;
+                    transform: translateX(59px);
+                    background: set.$colorBG1;
                 }
                 .meal-checked{
                     display: flex;

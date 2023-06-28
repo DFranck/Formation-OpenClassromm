@@ -539,7 +539,8 @@ header .img-container .img-francaise {
 }
 .menu .starters .meal, .menu .dishes .meal, .menu .desserts .meal {
   overflow: hidden;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   height: 69px;
   justify-content: space-between;
   cursor: pointer;
@@ -567,15 +568,14 @@ header .img-container .img-francaise {
 }
 .menu .starters .meal:hover .meal-check, .menu .dishes .meal:hover .meal-check, .menu .desserts .meal:hover .meal-check {
   transform: translateX(-59px);
+  position: relative;
 }
 .menu .starters .meal:hover .meal-check .meal-checked, .menu .dishes .meal:hover .meal-check .meal-checked, .menu .desserts .meal:hover .meal-check .meal-checked {
   visibility: visible;
 }
 .menu .starters .meal .meal-txt, .menu .dishes .meal .meal-txt, .menu .desserts .meal .meal-txt {
-  flex: 1;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   padding: 15px;
   position: relative;
 }
@@ -587,20 +587,27 @@ header .img-container .img-francaise {
   font-size: 15px;
   text-align: left;
 }
+.menu .starters .meal .meal-txt h3, .menu .starters .meal .meal-txt p, .menu .dishes .meal .meal-txt h3, .menu .dishes .meal .meal-txt p, .menu .desserts .meal .meal-txt h3, .menu .desserts .meal .meal-txt p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu .starters .meal .meal-check, .menu .dishes .meal .meal-check, .menu .desserts .meal .meal-check {
-  transition: 1s;
+  position: absolute;
+  right: 0;
+  transition: 0.5s;
   height: 100%;
   display: flex;
   align-items: flex-end;
 }
 .menu .starters .meal .meal-check .meal-price, .menu .dishes .meal .meal-check .meal-price, .menu .desserts .meal .meal-check .meal-price {
-  width: 40px;
-  transition: 1s;
+  width: 51px;
   font-weight: 700;
   font-family: "RobotoMedium", sans-serif;
   font-size: 15px;
-  padding: 6px 15px;
-  transform: translateX(45px);
+  padding: 0 15px 6px 9px;
+  transform: translateX(59px);
+  background: #EAEAEA;
 }
 .menu .starters .meal .meal-check .meal-checked, .menu .dishes .meal .meal-check .meal-checked, .menu .desserts .meal .meal-check .meal-checked {
   display: flex;
