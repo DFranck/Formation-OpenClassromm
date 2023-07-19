@@ -1,0 +1,11 @@
+Projet3  
+
+Livrables : 
+
+
+Un fichier au format PDF ou TXT contenant :  
+
+Le lien vers votre repository GitHub : 
+https://github.com/DFranck/Formation-OpenClassroom-Projet3 
+
+Le lien de la version en ligne de votre site Internet : https://dfranck.github.io/Formation-OpenClassroom-Projet3/ 
