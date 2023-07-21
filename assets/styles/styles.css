@@ -46,7 +46,7 @@
   width: 100vw;
   height: 100vh;
   background: #99E2D0;
-  z-index: 9000;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@
   width: 75px;
   border: 35px solid #9356DC;
   border-top: 35px solid #FF79DA;
-  z-index: 9999;
+  z-index: 2;
   animation: loading 2s ease-in-out infinite;
 }
 @keyframes loading {
@@ -535,7 +535,6 @@ header .img-container .img-francaise {
   background: #99E2D0;
   bottom: -10px;
   left: 0;
-  z-index: 1000;
 }
 .menu .starters .meal, .menu .dishes .meal, .menu .desserts .meal {
   overflow: hidden;

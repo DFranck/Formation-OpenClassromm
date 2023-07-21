@@ -37,7 +37,7 @@
             padding: 20px;
             margin-left: 10px;
             i{
-                color: set.$icons;
+                color: set.$iconFontAwsome;
                 width: 40px;
                 margin-left: 10px;
             }
@@ -46,7 +46,7 @@
                 left: 0px;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                background: set.$color1;
+                background: set.$colorPrimary;
                 padding: 10px;
                 height: 24px;
                 width: 24px;
@@ -56,7 +56,7 @@
                 align-items: center;
                 color: white;
                 font-size: 0.886rem;
-                font-family: set.$Subtitles;
+                font-family: set.$subtitle;
             }
             h3{
                 font-size: 1rem;

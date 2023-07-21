@@ -17,19 +17,20 @@
 }
 
 
-$Logo:'Shrikhand', sans-serif;
-$Titles:'RobotoBold', sans-serif;
-$Subtitles:'RobotoMedium', sans-serif;
-$paragraphs:'RobotoLight', sans-serif;
+$logo:'Shrikhand', sans-serif;
+$title:'RobotoBold', sans-serif;
+$subtitle:'RobotoMedium', sans-serif;
+$paragraph:'RobotoLight', sans-serif;
 
-$color1: #9356DC;
-$color2: #FF79DA;
-$color3: #99E2D0;
+$colorPrimary: #9356DC;
+$colorSecondary: #FF79DA;
+$colorTertiary: #99E2D0;
 $colorBG1: #EAEAEA;
 $colorBG2: #F6F6F6;
 $grey:#353535;
-$icons:#7E7E7E;
+$iconFontAwsome:#7E7E7E;
 
+//colorBackground trouver des nom plus parlant/adapté prim second ters. exemple gray, light gray..
 
 *{
     margin: 0;
@@ -39,20 +40,20 @@ $icons:#7E7E7E;
     text-decoration: none;
     color: black;
     h1{
-        font-family: $Logo;
+        font-family: $logo;
         font-size: 1.875rem;
         font-weight: 400;
     }
     h2{
-        font-family: $Titles;
+        font-family: $title;
         font-size: 1.5rem;
     }
     h3{
-        font-family: $Subtitles;
+        font-family: $subtitle;
         font-size: 1.125rem;
     }
     p{
-        font-family: $paragraphs;
+        font-family: $paragraph;
     }
 }
 
@@ -62,8 +63,8 @@ $icons:#7E7E7E;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: $color3;
-    z-index: 9000;
+    background: $colorTertiary;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +76,9 @@ $icons:#7E7E7E;
         content: "";
         height: 75px;
         width: 75px;
-        border: 35px solid $color1;
+        border: 35px solid $colorPrimary;
         border-top: 35px solid #FF79DA;
-        z-index: 9999;
+        z-index: 2;
         animation: loading 2s ease-in-out infinite;
     }
     @keyframes loading {
