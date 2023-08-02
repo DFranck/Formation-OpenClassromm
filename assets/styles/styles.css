@@ -374,6 +374,9 @@ footer ul :nth-child(3) a, footer ul :nth-child(4) a {
   width: 40px;
   margin-left: 10px;
 }
+.functioning .steps .step:nth-child(3) i {
+  color: #9356DC;
+}
 .functioning .steps .step span {
   position: absolute;
   left: 0px;

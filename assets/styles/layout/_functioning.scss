@@ -41,6 +41,10 @@
                 width: 40px;
                 margin-left: 10px;
             }
+            &:nth-child(3) i {
+                color: set.$colorPrimary
+            }
+            
             span{
                 position: absolute;
                 left: 0px;
